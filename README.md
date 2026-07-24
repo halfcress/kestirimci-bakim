@@ -93,4 +93,4 @@ pip install -r requirements.txt
 MIT — bkz. `LICENSE`.
 
 **Ozan Gözlüklü** · Elektrik-Elektronik Mühendisi ·
-[LinkedIn](https://www.linkedin.com/in/ozan-gozluklu)
+[LinkedIn](https://www.linkedin.com/in/ozan-gözlüklü/)

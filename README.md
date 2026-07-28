@@ -1,10 +1,10 @@
 # Yapay Zeka ile Kestirimci Bakım Katmanı
 
-Titreşim ve motor akımı (MCSA) verisiyle erken arıza tespiti — sahadan gelen bir
+Titreşim ve motor akımı (MCSA) verisiyle erken arıza tespiti: sahadan gelen bir
 bakım mühendisinin uçtan uca kurduğu, bilinçli olarak **dar kapsamlı** bir
 gözetimli öğrenme sistemi.
 
-> **EN — Summary:** An end-to-end predictive maintenance layer built on the CWRU
+> **EN Summary:** An end-to-end predictive maintenance layer built on the CWRU
 > vibration dataset and a Mendeley motor-current (MCSA) dataset. Time-domain
 > features (RMS, kurtosis, crest factor) feed a Random Forest classifier.
 > Evaluated with a leakage-aware protocol: 97.4% accuracy under naive random
@@ -29,8 +29,8 @@ raporlar:
 | Protokol | Doğruluk |
 | --- | --- |
 | Rastgele pencere bölmesi (sızıntı riskli, iyimser) | %97,4 |
-| Yük-bazlı bölme — hiç görülmemiş 1730 RPM'de test | **%97,0** (makro F1 %97,0) |
-| Çapraz kontrol — dört yükün her biri sırayla test | ortalama %96,1 |
+| Yük-bazlı bölme, hiç görülmemiş 1730 RPM'de test | **%97,0** (makro F1 %97,0) |
+| Çapraz kontrol, dört yükün her biri sırayla test | ortalama %96,1 |
 
 Fark küçükse model ezber değil, örüntü öğrenmiştir. Karışıklık matrisi
 (görülmemiş yük koşulu):
@@ -43,14 +43,14 @@ işaretlenmesi; sağlıklı sınıfta yanlış alarm sıfırdır.
 ## Veri setleri
 
 1. **CWRU (titreşim):** Case Western Reserve Üniversitesi rulman veri setinin
-   NumPy sürümü — [srigas/CWRU_Bearing_NumPy](https://github.com/srigas/CWRU_Bearing_NumPy)
+   NumPy sürümü: [srigas/CWRU_Bearing_NumPy](https://github.com/srigas/CWRU_Bearing_NumPy)
 
    ```bash
    git clone https://github.com/srigas/CWRU_Bearing_NumPy
    ```
 
 2. **MCSA (motor akımı):** "Current Signature Dataset of Three-Phase Induction
-   Motor under Varying Load Conditions" —
+   Motor under Varying Load Conditions",
    [Mendeley Data, gxdd74czwh](https://data.mendeley.com/datasets/gxdd74czwh/1).
    İndirilen CSV'ler `mcsa_data/Datasets/` altına açılır. İç/dış bilezik
    arızaları (0,7–1,7 mm), kırık rotor çubuğu (BRB) ve sağlıklı durum; 100/200/300 W yük.
@@ -90,7 +90,7 @@ pip install -r requirements.txt
 
 ## Lisans ve iletişim
 
-MIT — bkz. `LICENSE`.
+MIT lisansı, ayrıntı için `LICENSE` dosyasına bakın.
 
 **Ozan Gözlüklü** · Elektrik-Elektronik Mühendisi ·
-[LinkedIn](https://www.linkedin.com/in/ozan-gözlüklü/)
+[LinkedIn](https://www.linkedin.com/in/ozan-gozluklu)
